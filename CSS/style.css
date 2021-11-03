@@ -1,0 +1,397 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /*      H E A D E R      */
+
+
+.site-header {
+    background-color: #1190CD;
+    width: 100%;
+    height: 56px;
+}
+
+.header-content {
+    background-color:#1190CD;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 56px;
+    align-content: center;
+}
+
+.logo {
+    width: 11vw;
+    height: 24px;
+    float: left;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;  
+    color: white;
+}
+
+header ul li {
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 56px;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+header ul li:hover {
+background-color: #249ad1;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.buttons-list-left {
+    padding: 0;
+}
+
+.buttons-list-right {
+    margin-left: auto;
+    padding-right: 2vw
+}
+
+
+    /*      D E S C R I P T I O N  C O N T A I N E R      */
+
+    
+.description-container {
+    background-color: white;
+    width: 70vw;
+    height: 60px;
+}
+
+.description-list {    
+    color: grey;
+    font-size: 13px;
+    list-style-type: disc;
+    font-weight: 400;
+    margin: 0;
+    align-self: flex-end;
+    padding: 24px 0 12px;
+    display: block;
+}
+
+.description-list li:first-child {
+    list-style-type: none;
+}
+
+.description-list li {
+    float: left;
+    padding-right: 2vw;
+}
+
+.description-list li:hover {
+    color: #1190cd;
+    cursor: pointer;
+}
+
+.description-list li:last-child:hover {
+    cursor: default;
+    color: #1190cd;
+}
+
+
+
+    /*      C O N T E N T S  C O N T A I N E R      */
+
+
+
+.contents-container {
+    background-color: white;
+    width: 70vw;
+}
+
+
+.contents-right-container {
+    margin-left: 1.5vw;
+    width: 100%;
+}
+
+
+
+    /*      F I L T E R  C O N T A I N E R      */
+
+
+
+.main-left-container {
+    width: 288px;
+    background-color: white;
+    font-size: 13px;
+}
+
+.top-left-container {
+    background-color: #fdd685;
+    width: 100%;
+    height: 527px;
+    border: 1px solid #fdb10f;
+    color: black;
+}
+
+.filter-content {
+    padding: 16px;
+}
+
+.filter-title{
+    text-transform: uppercase;
+    color: black;
+    margin:15px 0 10px 0;
+}
+
+.txtInputs {
+    width: 254px;
+    height: 44px;
+    padding: 11px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    border:1px solid #1190CD;
+}
+
+.filter-state {
+    margin: 8px 0;
+    list-style: none;
+    padding-left: 0;
+    font-size: 13px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+.state-container::after {
+    content: 'x';
+    padding-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.tour-switch {
+    width: 28px;
+    height: 28px;
+}
+
+.form-check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#txtTour {
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.btnShowAll {
+    display: block;
+    width: 254px;
+    height: 44px;
+    border: none;
+    text-align: justify;
+    padding-left: 20px ;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.btnShowAll:active {
+    border:1px solid #1190CD;
+    padding-left: 19px ;
+}
+
+.filter-type {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.type-state {
+    margin: 8px 0;
+    list-style: none;
+    padding-left: 0;
+    font-size: 13px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+.type-container::after {
+    content: 'x';
+    padding-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#inp-value {
+    width: 119px;
+    height: 44px;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    text-align: right;
+    border-radius: 4px;
+}
+
+#inp-value:focus {
+    width: 119px;
+    height: 44px;
+    background-color: white;
+    padding: 9px;
+    text-align: right;
+    border-radius: 4px;
+    outline: none;
+    border:1px solid #1190CD;
+}
+
+.rooms-filter {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.rooms-list-button {
+    list-style: none;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.rooms-button {
+    border: none;
+    border-radius: 32px;
+    background-color: white;
+    height: 32px;
+    width: 40px;
+}
+
+.rooms-button:hover{
+    background-color: lightgrey;
+}
+
+.rooms-button:focus{
+    background-color: #1190CD;
+    color: white;
+}
+
+.bottom-left-container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid lightgrey;
+}
+
+#bot-inp-value {
+    width: 119px;
+    height: 44px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    padding: 9px;
+    text-align: right;
+    border-radius: 4px;
+}
+
+#bot-inp-value:focus {
+    width: 119px;
+    height: 44px;
+    background-color: white;
+    padding: 9px;
+    text-align: right;
+    border-radius: 4px;
+    outline: none;
+    border:1px solid #1190CD;
+}
+
+
+
+    /*      F I L T E R  C O N T A I N E R      */
+
+
+.card-grid-container{
+    background-color: black;
+    width: 100%;
+    height: 242px;
+    display: grid;
+    grid-template-columns: 350px auto;
+    margin-top: 15px;
+}
+
+.carousel {
+    grid-column: 1 / 2;
+    background-color: tomato;
+}
+
+.img {
+    background-color: #fdb10f;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    display: flex;
+    grid-column: 2 / 2;
+    background-color:white;
+    padding: 16px;
+}
+
+.address {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+    white-space: nowrap;
+}
+
+.name {
+    display: inline-block;   
+    white-space: nowrap;
+}
+
+.detailsUL {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.detailsLI {
+    list-style-type: none;
+}
+
+.detailsSpan {
+    padding-left: 10px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.detailsSpan:first-child {
+    padding-left: 0;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
