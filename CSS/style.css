@@ -395,3 +395,46 @@ header ul li a:hover {
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
 }
+
+.summaryDIV {
+    background-color: black;
+    width: 100%;
+    height: 151px;
+}
+
+.summaryNav {
+    background-color: tomato;
+    height: 45px;
+}
+
+.summaryUL {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    align-items: center;
+}
+
+.summaryUL li {
+    display: inline-block;
+    border: 4px solid white;
+}
+
+.summaryUL li button{
+    height: 37px;
+    width: 100%;
+    border: none;
+    background-color: white;
+    padding: 0 24px;
+    color: #1190CD;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+
+.summaryUL li:first-child {
+    border-bottom: 4px solid #1190CD;
+}
+
+
