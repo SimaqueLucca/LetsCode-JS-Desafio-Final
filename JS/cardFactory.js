@@ -9,7 +9,7 @@ function CreateCard(
         garageAPI
     }
 ) {
-    const mainContainer = document.querySelector('.contents-right-container')
+    const mainContainer = document.querySelector('.APICards')
 
     const card = document.createElement('article')
     card.classList.add('card-grid-container')
@@ -87,9 +87,6 @@ function CreateCard(
     details.append(rooms)
     details.append(bathrooms)
     details.append(garage)
-
-
-
 }
 
 export default CreateCard

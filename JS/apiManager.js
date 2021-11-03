@@ -19,8 +19,8 @@ async function getAPIData(inputText) {
 async function getItemData(promise, UF) {
     let itemData = await promise
     itemData = itemData.search.result.listings
+
     itemData.map((x) => {
-        console.log(x);
 
         const image = x.medias[0].url
         const address = `${x.link.data.street}, ${x.link.data.streetNumber} - ${x.link.data.neighborhood}, ${x.link.data.city} - ${UF.toUpperCase()}`
@@ -31,7 +31,6 @@ async function getItemData(promise, UF) {
         const bathrooms = `${x.listing.bathrooms}`
         const garage = `${x.listing.parkingSpaces}`
 
-        console.log(area);
         CreateCard(
             {
                 mediaAPI: image,
